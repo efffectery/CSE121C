@@ -1,0 +1,48 @@
+# Eclipse specific files
+.settings/
+.metadata/
+.localhistory/
+*.log
+
+# Eclipse project files
+*.project
+*.cproject
+
+# Compiled files
+*.o
+*.obj
+*.elf
+*.exe
+*.out
+*.a
+*.so
+*.d
+
+# Eclipse build artifacts
+bin/
+build/
+Debug/
+Release/
+
+# Dependency files
+*.d
+
+# IDE specific files
+*.swp
+*.swo
+*.user
+
+# CMake / Autotools build files (if applicable)
+CMakeLists.txt.user
+CMakeCache.txt
+*.cmake
+*.make
+
+# Debugging files
+*.gdb
+*.stackdump
+
+# Other temporary or system files
+Thumbs.db
+.DS_Store
+

@@ -1,0 +1,90 @@
+/*
+ ============================================================================
+ Name        : W02.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	int done = 1;
+	int choice = 0;
+	printf("1. Apple\n");
+	printf("2. Banana\n");
+	printf("3. Watermelon\n");
+	printf("4. Kiwi\n");
+	printf("5. Orange\n");
+
+	while (done)
+	{
+		printf("What number will you buy ");
+		scanf("%d", &choice);
+
+		switch (choice)
+		{
+		case 1:
+			printf("Apple is $0.59\n");
+			break;
+		case 2:
+			printf("Banana is $1.00\n");
+			break;
+		case 3:
+			printf("Watermelon is $3.00\n");
+			break;
+		case 4:
+			printf("Kiwi is $0.79\n");
+			break;
+		case 5:
+			printf("Orange is $0.69\n");
+			break;
+		default:
+			printf("Try a different number\n");
+		}
+		printf("Would you like to choose another item? (1 or 0) ");
+		scanf("%d", &done);
+	}
+
+	for (int i = 1; i <= 10; i++)
+	{
+		printf("%d\n", i);
+	}
+	for (int i = 10; i >= 1; i--)
+	{
+		printf("%d\n", i);
+	}
+
+	float input[10];
+
+	for (int i = 0; i <= 9; i++)
+	{
+		printf("Enter a number:\n ");
+		scanf("%f", &input[i]);
+	}
+
+	int minimum = 10000000000;
+	int maximum = -10000000000;
+	int average = 0;
+	for (int i = 0; sizeof(input); i++)
+	{
+		printf("%d", input[i]);
+		if (input[i] > maximum)
+		{
+			maximum = input[i];
+		}
+		if (input[i] < minimum)
+		{
+			minimum = input[i];
+		}
+		average += input[i];
+	}
+	average /= sizeof(input);
+
+
+	return 0;
+}

@@ -1,0 +1,11 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int int_variable;
+	printf("Enter a Variable");
+	scanf("%f", &int_variable);
+	printf("You entered %int_variable", int_variable);
+	return EXIT_SUCCESS;
+}

@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int num;
+	printf("Enter a Variable ");
+	scanf("%d", &num);
+	printf("You entered %d", num);
+
+	float eww_number;
+	printf("Enter a floating point number ");
+	scanf("%f", &eww_number);
+	printf("There are lots of ways to represent this number %f %e %.2f", eww_number, eww_number, eww_number);
+	return 0;
+}

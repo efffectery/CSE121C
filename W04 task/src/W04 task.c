@@ -1,9 +1,9 @@
 /*
  ============================================================================
- Name        : W03.c
- Author      : 
- Version     :
- Copyright   : Your copyright notice
+ Name        : W04.c
+ Author      : Benson Montano
+ Version     : 1.0
+ Copyright   : None
  Description : Hello World in C, Ansi-style
  ============================================================================
  */
@@ -11,7 +11,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+char* foo(void)
+{
+    printf("wassup\n");
+    return "wassup\n";
+}
+
+
+
 int main(void) {
-	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+
+    foo();
+    printf(foo());
+
+
+
 	return EXIT_SUCCESS;
 }
